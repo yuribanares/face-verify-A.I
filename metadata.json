@@ -1,0 +1,7 @@
+{
+  "name": "Face Match AI",
+  "description": "An application that uses AI to capture a selfie and compare it with an uploaded photo to verify if they are the same person.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
