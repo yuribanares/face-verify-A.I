@@ -23,11 +23,11 @@ export const compareFaces = async (
   selfieBase64: string,
   uploadedImageBase64: string
 ): Promise<ComparisonResult> => {
-  if (!process.env.API_KEY) {
+  {/* if (!process.env.API_KEY) {
     throw new Error("API_KEY environment variable is not set");
   }
-
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+*/}
+  const ai = new GoogleGenAI({ apiKey: `AIzaSyCPmzGDCcir_57UFO4Xn2eX_BPddoruAlk` });
 
   const selfiePart = fileToGenerativePart(selfieBase64);
   const uploadedImagePart = fileToGenerativePart(uploadedImageBase64);
